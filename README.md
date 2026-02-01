@@ -8,15 +8,15 @@ You can view the interactive tutorial live here:
 
 ## 📖 Project Overview
 
-This repository contains the official tutorial for the **Evergo Casa** web architecture project. It focuses on leveraging AI-native development workflows within the Trae IDE to streamline the creation of professional B2B platforms.
+This repository contains a standardized workflow and tutorial for modern B2B web architecture. It focuses on leveraging AI-native development workflows within the Trae IDE to streamline the creation of professional global trade platforms and corporate websites.
 
 ## 🛠️ Key Features
 
 - **AI Skill System**: Learn how to create custom Trae SKILLS to automate complex B2B workflows.
-- **Strict Rule Enforcement**: Implementation of project-specific rules (`.trae/rules`) for design consistency.
+- **Strict Rule Enforcement**: Implementation of project-specific rules (`.trae/rules`) for design consistency and code quality.
 - **WordPress Integration**: Seamlessly bind your local development environment to WordPress via REST API.
-- **Minotti Aesthetic Design**: Standardized design systems for luxury B2B furniture brands.
-- **SEO & GEO Optimization**: Built-in frameworks for AIDA-model copywriting and AI search visibility.
+- **Professional B2B Design**: Standardized design systems tailored for high-end manufacturing, industrial, and trade enterprises.
+- **SEO & GEO Optimization**: Built-in frameworks for AIDA-model copywriting and AI search visibility strategies.
 
 ## 📂 Repository Structure
 
@@ -28,19 +28,4 @@ This repository contains the official tutorial for the **Evergo Casa** web archi
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/evolution301/WP-DIVI-TRAE.git
-   ```
-2. **Open the Tutorial**:
-   Visit the [Live Demo](https://evolution301.github.io/WP-DIVI-TRAE/) or open `index.html` locally.
-
-3. **Configure your Trae Environment**:
-   - Move the rules from the tutorial to your `.trae/rules/` directory.
-   - Set up your `.env` file for WordPress connectivity.
-
-## 🏭 Business Context
-
-Developed for **Evergo Furniture Ltd**, based in Longjiang, Foshan. This project aims to digitize the 20,000 sqm showroom experience and optimize factory-direct OEM/ODM lead generation.
-
----
-
-*Generated for Internal Website Construction & SEO Planning.*
+   git clone [https://github.com/evolution301/WP-DIVI-TRAE.git](https://github.com/evolution301/WP-DIVI-TRAE.git)
