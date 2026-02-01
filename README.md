@@ -1,6 +1,6 @@
 # WP-DIVI-TRAE 🚀
 
-A comprehensive interactive guide and template for building high-conversion B2B furniture websites using **WordPress**, **Divi 5**, and **Trae AI**.
+A comprehensive interactive guide and template for building high-conversion B2B websites using **WordPress**, **Divi 5**, and **Trae AI**.
 
 ## 🌐 Live Demo
 You can view the interactive tutorial live here:
