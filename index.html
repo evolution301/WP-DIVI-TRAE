@@ -991,26 +991,26 @@ WP_TAXONOMY=category</code></pre>
         <section id="workflow">
             <h2>
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 23 2 17 7"/></svg>
-                完整工作流
+                实战完整工作流
             </h2>
 
-            <p>现在你已经掌握了所有基础技能，让我们看看如何组合使用它们来完成一个完整的网站开发任务。</p>
+            <p>本流程基于真实的 B2B 网站开发案例，展示了从原始业务资料到生成高转化全站代码的完整闭环。学员可直接参考此流程进行项目开发：</p>
 
             <div class="timeline">
                 <div class="step-item">
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">01</span>
-                        <h3 class="step-title">准备业务文档</h3>
+                        <h3 class="step-title">业务资料深度分析</h3>
                     </div>
-                    <p>整理你的业务资料，包括公司介绍、产品信息、目标受众、SEO 关键词等。保存为 Markdown 文件。</p>
+                    <p>将客户提供的原始业务手册交给 AI，提取公司核心信息、产品分类、目标受众及 SEO 关键词，为后续设计奠定基础。</p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                我有一份业务文档，路径是 `官方核心资料手册.md`。请帮我分析并提取：1. 公司核心信息 2. 产品分类 3. 目标受众 4. SEO 关键词。
+                                我有一份业务文档《官方核心资料手册.md》。请帮我分析并提取：1. 公司核心信息 2. 产品分类 3. 目标受众 4. SEO 关键词。
                             </div>
                         </div>
                     </div>
@@ -1020,16 +1020,16 @@ WP_TAXONOMY=category</code></pre>
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">02</span>
-                        <h3 class="step-title">设计网站框架</h3>
+                        <h3 class="step-title">可视化架构与树状系统</h3>
                     </div>
-                    <p>基于业务文档，设计网站的信息架构（页面列表、层级关系、导航结构）。</p>
+                    <p>设计符合 B2B 采购逻辑的页面层级，并通过“树状系统”建立清晰的网站框架文件（WEBSITE_ARCHITECTURE.md）。</p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                请根据业务文档帮我设计网站框架。要求：1. 列出所有需要的页面 2. 定义页面层级关系 3. 为每个页面分配 SEO 关键词 4. 确保符合用户意图（信息型、商业型、交易型）。
+                                请先用树状系统给我列出网站框架。包含页面层级、SEO 关键词分配，并确保符合用户意图（信息型、商业型、交易型）。
                             </div>
                         </div>
                     </div>
@@ -1039,16 +1039,16 @@ WP_TAXONOMY=category</code></pre>
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">03</span>
-                        <h3 class="step-title">定义设计系统</h3>
+                        <h3 class="step-title">视觉风格研究与设计系统</h3>
                     </div>
-                    <p>创建颜色、字体、间距等设计规范，确保品牌一致性。</p>
+                    <p>调研行业顶尖风格（如“大厂”或“奢侈品”风），确定配色方案与字体，并同步更新到项目规则（.trae/rules）中。</p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                请帮我创建完整的设计系统规则文件。包括：1. 颜色系统（03-color-system.md）2. 字体系统（04-typography.md）3. 间距规范（05-spacing.md）4. 布局规范（06-layout.md）。
+                                根据我们的产品，使用调研工具帮我查找符合我们网站的配色和字体，我们必须要“大厂”风格。确定后更新到项目规则中。
                             </div>
                         </div>
                     </div>
@@ -1058,16 +1058,16 @@ WP_TAXONOMY=category</code></pre>
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">04</span>
-                        <h3 class="step-title">创建全局组件</h3>
+                        <h3 class="step-title">全局组件与物理目录生成</h3>
                     </div>
-                    <p>开发 Header、Footer 等全局组件，确保所有页面共享。</p>
+                    <p>创建响应式的全局 Header/Footer，并利用文件操作工具一键生成全站所有的页面文件夹。 </p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                请帮我创建全局 Header 和 Footer 组件。要求：1. 使用我定义的设计系统变量 2. 响应式设计 3. 包含 Schema 标记 4. 保存到 website/global/ 目录。
+                                请帮我创建全局 Header 和 Footer，包含 Schema 标记，并帮我生成整个网站的页面文件夹。
                             </div>
                         </div>
                     </div>
@@ -1077,16 +1077,16 @@ WP_TAXONOMY=category</code></pre>
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">05</span>
-                        <h3 class="step-title">生成页面内容</h3>
+                        <h3 class="step-title">AIDA 高转化内容创作</h3>
                     </div>
-                    <p>使用 SKILL 和规则，为每个页面生成符合规范的完整内容。</p>
+                    <p>为每个页面编写完整的 Markdown 内容，严格遵循 AIDA 模型，并根据不同页面的用户意图（如解决方案页、产品页）进行差异化创作。</p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                请帮我生成首页的完整内容。要求：1. 使用 b2b-seo-copywriter SKILL 2. 遵循所有规则文件 3. 包含 Hero、Features、CTA 等区块 4. 使用 AIDA 模型 5. 包含 JSON-LD Schema。
+                                为所有页面编写 AIDA 框架内容。要求使用专业 B2B 语境，并针对 SEO 和 GEO（生成式引擎优化）进行内容增强。
                             </div>
                         </div>
                     </div>
@@ -1096,16 +1096,16 @@ WP_TAXONOMY=category</code></pre>
                     <div class="step-marker"></div>
                     <div class="step-header">
                         <span class="step-number">06</span>
-                        <h3 class="step-title">上传到 WordPress</h3>
+                        <h3 class="step-title">转换规则与 SEO/GEO 深度优化</h3>
                     </div>
-                    <p>将生成的页面内容上传到 WordPress，完成部署。</p>
+                    <p>制定严格的转化规则（如一屏一询盘），并利用 SEO 技能进行最后的深度审计，确保内容能够被 AI 引擎（如 Perplexity/ChatGPT）高效抓取。</p>
                     <div class="ai-chat-box">
                         <div class="chat-message user">
                             <div class="avatar user">You</div>
                             <div class="message-content">
                                 <span class="prompt-label">Prompt</span>
                                 <span class="copy-prompt">复制代码</span>
-                                请帮我将首页内容上传到 WordPress。要求：1. 创建新页面 2. 插入内容 3. 设置 SEO 元数据 4. 发布页面。
+                                再次用 SEO 和 GEO 方向优化内容。每一个 Section 都必须有一个指向询盘的 Button，并把这个规则永久写入项目规则库。
                             </div>
                         </div>
                     </div>
@@ -1116,55 +1116,91 @@ WP_TAXONOMY=category</code></pre>
         <section id="chat">
             <h2>
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                对话示例
+                对话流程全记录（对话示例）
             </h2>
 
-            <p>以下是一些常见的对话场景，帮助你更好地与 AI 协作：</p>
+            <p>以下是本次项目从 0 到 1 的核心对话流程，建议学员按照此节奏与 AI 沟通：</p>
 
-            <h3>场景 1：创建新页面</h3>
+            <h3>1. 资料分析与需求对齐</h3>
             <div class="ai-chat-box">
                 <div class="chat-message user">
                     <div class="avatar user">You</div>
                     <div class="message-content">
                         <span class="prompt-label">Prompt</span>
                         <span class="copy-prompt">复制代码</span>
-                        请帮我创建一个"关于我们"页面。要求：1. 使用 b2b-seo-copywriter SKILL 2. 包含公司历史、团队介绍、价值观 3. 使用我定义的设计系统 4. 包含图片画廊。
+                        请认真阅读我的业务手册，开始为我设计网页框架。
                     </div>
                 </div>
             </div>
 
-            <h3>场景 2：修改现有页面</h3>
+            <h3>2. 提取核心商业要素</h3>
             <div class="ai-chat-box">
                 <div class="chat-message user">
                     <div class="avatar user">You</div>
                     <div class="message-content">
                         <span class="prompt-label">Prompt</span>
                         <span class="copy-prompt">复制代码</span>
-                        请帮我修改首页的 Hero 区域。要求：1. 更新标题为更吸引人的文案 2. 添加新的背景图片 3. 优化 CTA 按钮文案 4. 保持响应式设计。
+                        请帮我提取：1. 公司核心信息 2. 产品分类 3. 目标受众 4. SEO 关键词。
                     </div>
                 </div>
             </div>
 
-            <h3>场景 3：SEO 优化</h3>
+            <h3>3. 生成架构与树状系统</h3>
             <div class="ai-chat-box">
                 <div class="chat-message user">
                     <div class="avatar user">You</div>
                     <div class="message-content">
                         <span class="prompt-label">Prompt</span>
                         <span class="copy-prompt">复制代码</span>
-                        请帮我优化产品页面的 SEO。要求：1. 使用 keyword-research SKILL 分析关键词 2. 优化 Title 和 Meta Description 3. 添加 JSON-LD Schema 4. 优化 H1-H6 结构。
+                        先用树状系统给我列出网站框架，并帮制作一个文件专门放置这个树状系统。
                     </div>
                 </div>
             </div>
 
-            <h3>场景 4：批量生成</h3>
+            <h3>4. 针对性调整架构</h3>
             <div class="ai-chat-box">
                 <div class="chat-message user">
                     <div class="avatar user">You</div>
                     <div class="message-content">
                         <span class="prompt-label">Prompt</span>
                         <span class="copy-prompt">复制代码</span>
-                        请帮我批量生成 10 个产品页面。要求：1. 使用 product 列表数据 2. 每个页面包含产品详情、规格、价格 3. 使用统一的模板 4. 上传到 WordPress。
+                        移除原有的 Resources，加入一个“解决方案”页面针对我们的用户对象设计。再加入一个 Blog 页面。
+                    </div>
+                </div>
+            </div>
+
+            <h3>5. 视觉调研与风格确认</h3>
+            <div class="ai-chat-box">
+                <div class="chat-message user">
+                    <div class="avatar user">You</div>
+                    <div class="message-content">
+                        <span class="prompt-label">Prompt</span>
+                        <span class="copy-prompt">复制代码</span>
+                        查找符合我们网站的配色和字体，给我们例子，我们必须要“大牌”或者“大厂”风格。
+                    </div>
+                </div>
+            </div>
+
+            <h3>6. 更新项目全局规则</h3>
+            <div class="ai-chat-box">
+                <div class="chat-message user">
+                    <div class="avatar user">You</div>
+                    <div class="message-content">
+                        <span class="prompt-label">Prompt</span>
+                        <span class="copy-prompt">复制代码</span>
+                        把确定的配色和字体更新到规则去，但保持移动端的间距和按钮规则不要改变。
+                    </div>
+                </div>
+            </div>
+
+            <h3>7. 全站内容生成与优化</h3>
+            <div class="ai-chat-box">
+                <div class="chat-message user">
+                    <div class="avatar user">You</div>
+                    <div class="message-content">
+                        <span class="prompt-label">Prompt</span>
+                        <span class="copy-prompt">复制代码</span>
+                        帮我生成全部页面的 AIDA 框架和内容。再次调用 SEO/GEO 工具深入研究，确保每个 Section 都有且只有一个引导询盘的按钮。
                     </div>
                 </div>
             </div>
