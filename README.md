@@ -2,6 +2,10 @@
 
 A comprehensive interactive guide and template for building high-conversion B2B furniture websites using **WordPress**, **Divi 5**, and **Trae AI**.
 
+## 🌐 Live Demo
+You can view the interactive tutorial live here:
+**[https://evolution301.github.io/WP-DIVI-TRAE/](https://evolution301.github.io/WP-DIVI-TRAE/)**
+
 ## 📖 Project Overview
 
 This repository contains the official tutorial for the **Evergo Casa** web architecture project. It focuses on leveraging AI-native development workflows within the Trae IDE to streamline the creation of professional B2B platforms.
@@ -16,7 +20,8 @@ This repository contains the official tutorial for the **Evergo Casa** web archi
 
 ## 📂 Repository Structure
 
-- `TUTORIAL.html`: The core interactive tutorial page (View this in your browser).
+- `index.html`: The core interactive tutorial page (Main entry point for GitHub Pages).
+- `TUTORIAL.html`: Duplicate of the tutorial page.
 - `README.md`: Project documentation and quick start guide.
 
 ## 🚀 Quick Start
@@ -26,7 +31,7 @@ This repository contains the official tutorial for the **Evergo Casa** web archi
    git clone https://github.com/evolution301/WP-DIVI-TRAE.git
    ```
 2. **Open the Tutorial**:
-   Open `TUTORIAL.html` in any modern web browser to start the interactive learning experience.
+   Visit the [Live Demo](https://evolution301.github.io/WP-DIVI-TRAE/) or open `index.html` locally.
 
 3. **Configure your Trae Environment**:
    - Move the rules from the tutorial to your `.trae/rules/` directory.
